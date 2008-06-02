@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testWeb", "src\testWeb\testWeb.csproj", "{D0D80C40-E8B9-476D-8A2D-B0898182D3B9}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetXmlSwfChart", "src\DotNetXmlSwfChart\DotNetXmlSwfChart.csproj", "{ED1184E1-CE46-47A9-B10A-0B02994793A5}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D0D80C40-E8B9-476D-8A2D-B0898182D3B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0D80C40-E8B9-476D-8A2D-B0898182D3B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0D80C40-E8B9-476D-8A2D-B0898182D3B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0D80C40-E8B9-476D-8A2D-B0898182D3B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED1184E1-CE46-47A9-B10A-0B02994793A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED1184E1-CE46-47A9-B10A-0B02994793A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED1184E1-CE46-47A9-B10A-0B02994793A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED1184E1-CE46-47A9-B10A-0B02994793A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

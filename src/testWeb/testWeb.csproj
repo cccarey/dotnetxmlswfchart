@@ -1,0 +1,148 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D0D80C40-E8B9-476D-8A2D-B0898182D3B9}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>testWeb</RootNamespace>
+    <AssemblyName>testWeb</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="charts\charts.swf" />
+    <Content Include="charts\charts_library\arno.swf" />
+    <Content Include="charts\charts_library\arst.swf" />
+    <Content Include="charts\charts_library\brfl.swf" />
+    <Content Include="charts\charts_library\brno.swf" />
+    <Content Include="charts\charts_library\brst.swf" />
+    <Content Include="charts\charts_library\cl3d.swf" />
+    <Content Include="charts\charts_library\clfl.swf" />
+    <Content Include="charts\charts_library\clno.swf" />
+    <Content Include="charts\charts_library\clp3.swf" />
+    <Content Include="charts\charts_library\cls3.swf" />
+    <Content Include="charts\charts_library\clst.swf" />
+    <Content Include="charts\charts_library\cnno.swf" />
+    <Content Include="charts\charts_library\lnno.swf" />
+    <Content Include="charts\charts_library\mxno.swf" />
+    <Content Include="charts\charts_library\pi3d.swf" />
+    <Content Include="charts\charts_library\pino.swf" />
+    <Content Include="charts\charts_library\pono.swf" />
+    <Content Include="charts\charts_library\scno.swf" />
+    <Content Include="chartView.aspx" />
+    <Content Include="images\button.swf" />
+    <Content Include="images\cursor.swf" />
+    <Content Include="images\pattern.jpg" />
+    <Content Include="images\pattern.swf" />
+    <Content Include="images\slow.swf" />
+    <Content Include="index.htm" />
+    <Content Include="Web.config" />
+    <Content Include="xmlData.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="chartView.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>chartView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="chartView.aspx.designer.cs">
+      <DependentUpon>chartView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tests\BarOne.cs" />
+    <Compile Include="tests\BarStackedOne.cs" />
+    <Compile Include="tests\BarStackedTwo.cs" />
+    <Compile Include="tests\BarTwo.cs" />
+    <Compile Include="tests\Column3DOne.cs" />
+    <Compile Include="tests\Column3DTwo.cs" />
+    <Compile Include="tests\ColumnOne.cs" />
+    <Compile Include="tests\ChartTestBase.cs" />
+    <Compile Include="tests\ChartTestFactory.cs" />
+    <Compile Include="tests\ColumnTwo.cs" />
+    <Compile Include="tests\FloatingBarOne.cs" />
+    <Compile Include="tests\FloatingBarTwo.cs" />
+    <Compile Include="tests\FloatingColumnOne.cs" />
+    <Compile Include="tests\FloatingColumnTwo.cs" />
+    <Compile Include="tests\LineOne.cs" />
+    <Compile Include="tests\LineTwo.cs" />
+    <Compile Include="tests\NullTest.cs" />
+    <Compile Include="tests\ParallelColumn3DOne.cs" />
+    <Compile Include="tests\ParallelColumn3DTwo.cs" />
+    <Compile Include="tests\Pie3DOne.cs" />
+    <Compile Include="tests\Pie3DTwo.cs" />
+    <Compile Include="tests\PieOne.cs" />
+    <Compile Include="tests\PieTwo.cs" />
+    <Compile Include="tests\StackedColumn3dOne.cs" />
+    <Compile Include="tests\StackedColumn3dTwo.cs" />
+    <Compile Include="tests\StackedColumnOne.cs" />
+    <Compile Include="tests\StackedColumnTwo.cs" />
+    <Compile Include="xmlData.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>xmlData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="xmlData.aspx.designer.cs">
+      <DependentUpon>xmlData.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="charts\charts_library\.DS_Store" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DotNetXmlSwfChart\DotNetXmlSwfChart.csproj">
+      <Project>{ED1184E1-CE46-47A9-B10A-0B02994793A5}</Project>
+      <Name>DotNetXmlSwfChart</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v8.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/testWeb</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

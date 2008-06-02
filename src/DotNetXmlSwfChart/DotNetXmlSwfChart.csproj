@@ -1,0 +1,78 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ED1184E1-CE46-47A9-B10A-0B02994793A5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DotNetXmlSwfChart</RootNamespace>
+    <AssemblyName>DotNetXmlSwfChart</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AxisCategory.cs" />
+    <Compile Include="AxisTicks.cs" />
+    <Compile Include="AxisValue.cs" />
+    <Compile Include="Chart.cs" />
+    <Compile Include="ChartBorder.cs" />
+    <Compile Include="ChartData.cs" />
+    <Compile Include="ChartDataPoint.cs" />
+    <Compile Include="ChartGrid.cs" />
+    <Compile Include="ChartHTML.cs" />
+    <Compile Include="ChartPreferences.cs" />
+    <Compile Include="ChartRectangle.cs" />
+    <Compile Include="ChartSettingBase.cs" />
+    <Compile Include="ChartTransition.cs" />
+    <Compile Include="ChartValue.cs" />
+    <Compile Include="DrawBase.cs" />
+    <Compile Include="DrawCircle.cs" />
+    <Compile Include="DrawImage.cs" />
+    <Compile Include="DrawLine.cs" />
+    <Compile Include="DrawRectangle.cs" />
+    <Compile Include="DrawText.cs" />
+    <Compile Include="Enums.cs" />
+    <Compile Include="LegendLabel.cs" />
+    <Compile Include="LegendRectangle.cs" />
+    <Compile Include="LegendTransition.cs" />
+    <Compile Include="LinkArea.cs" />
+    <Compile Include="LinkData.cs" />
+    <Compile Include="LinkElements.cs" />
+    <Compile Include="LiveUpdate.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SeriesGap.cs" />
+    <Compile Include="XmlData.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
